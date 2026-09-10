@@ -119,6 +119,26 @@
 #tb-root .tb-about .tb-body{padding-top:0;}
 #tb-root .tb-about .tb-body p:first-child{line-height:1;padding-top:.12em;}
 #tb-root .tb-about .tb-body{max-width:62ch;}
+@media (max-width:720px){
+  #tb-root .tb-section,#tb-root .tb-tight,#tb-root .tb-light,#tb-root .tb-about{height:auto !important;min-height:0;padding-top:40px !important;padding-bottom:40px !important;overflow:visible;}
+  #tb-root .tb-section .tb-wrap,#tb-root .tb-about .tb-wrap{grid-template-columns:1fr !important;gap:24px;}
+  #tb-root .tb-section h2,#tb-root .tb-display{white-space:normal !important;font-size:clamp(28px,8.5vw,40px) !important;line-height:1;}
+  #tb-root .tb-header{padding-top:14px;padding-bottom:14px;gap:12px;}
+  #tb-root .tb-header > .tb-eyebrow{font-size:11px;}
+  #tb-root .tb-nav{gap:10px 16px;font-size:11px;justify-content:flex-start;width:100%;}
+  #tb-root .tb-hero{padding-top:28px;padding-bottom:28px;}
+  #tb-root .tb-hero{padding-left:0;padding-right:0;}
+  #tb-root .tb-mark{width:100%;margin:0;padding:32px 16px;}
+  #tb-root .tb-mark .tb-wordmark{font-size:clamp(18px,5.6vw,28px) !important;white-space:nowrap;letter-spacing:.01em;}
+  #tb-root{overflow-x:hidden;}
+  #tb-root .tb-spec{grid-template-columns:auto minmax(0,1fr);gap:6px 14px;font-size:12px;}
+  #tb-root .tb-body{max-width:none;font-size:16px;}
+  #tb-root .tb-photo{max-height:none;width:100%;}
+  #tb-root .tb-photo-row{height:auto;flex-wrap:wrap;}
+  #tb-root .tb-photo-row img{height:auto;width:100%;}
+  #tb-root .tb-about img{max-width:200px;}
+  #tb-root .tb-footer{flex-direction:column;align-items:flex-start;gap:6px;font-size:12px;}
+}
 </style>
 
 <header class="tb-header tb-pad">
