@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Treebridge Research</title>
+<meta name="description" content="Treebridge Research — Paige Treebridge. Metastable analog synthesis, AI-native electronics documentation, Coherence: AI mind-map.">
+<link rel="icon" href="images/favicon.svg">
+<style>html,body{margin:0;background:#151110;}#tb-root .tb-band{display:block;width:100%;height:clamp(160px,26vw,340px);object-fit:cover;border-bottom:1px solid var(--cream);}
+#tb-root figure{margin:0;}
+#tb-root .tb-photo{display:block;width:100%;height:auto;border:1px solid var(--rule);}
+#tb-root .tb-photo-row{display:grid;grid-template-columns:2fr 1fr;gap:16px;align-items:stretch;}
+#tb-root .tb-photo-row img{width:100%;height:100%;object-fit:cover;display:block;border:1px solid #999999;}
+#tb-root figcaption{font-size:12px;letter-spacing:.06em;text-transform:uppercase;color:var(--mute);margin-top:8px;}
+</style>
+</head>
+<body>
+<div id="tb-root">
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Bungee&family=IBM+Plex+Mono:ital,wght@0,400;0,500;0,600;1,400&display=swap');
+@import url('https://api.fontshare.com/v2/css?f[]=tanker@400&display=swap');
+#tb-root{--ink:#151110;--cream:#ffffff;--coral:#FF005D;--coral-lt:#FF005D;--mute:#9a9a9a;--rule:#555555;
+  font-family:'IBM Plex Mono',Menlo,Consolas,monospace;background:var(--ink);color:var(--cream);line-height:1.5;
+  width:100vw;margin:0 calc(50% - 50vw);box-sizing:border-box;text-align:left;-webkit-font-smoothing:antialiased;}
+#tb-root *{box-sizing:border-box;}
+#tb-root a{color:inherit;text-decoration:none;transition:color .15s;}
+#tb-root a:hover{color:var(--coral-lt);}
+#tb-root strong{font-weight:600;color:var(--coral-lt);}
+#tb-root ::selection{background:var(--coral-lt);color:var(--ink);}
+#tb-root p,#tb-root h1,#tb-root h2,#tb-root ul,#tb-root dl,#tb-root dd{margin:0;}
+#tb-root .tb-pad{padding-left:clamp(20px,5vw,72px);padding-right:clamp(20px,5vw,72px);}
+#tb-root .tb-wrap{max-width:1280px;margin:0 auto;}
+#tb-root .tb-eyebrow{font-size:12px;letter-spacing:.08em;text-transform:uppercase;}
+#tb-root .tb-display{font-family:'Tanker',Impact,'Arial Narrow',sans-serif;font-weight:400;letter-spacing:.005em;}
+#tb-root .tb-bungee{font-family:'Bungee',Impact,sans-serif;letter-spacing:.02em;}
+#tb-root .tb-topbar{display:flex;justify-content:space-between;gap:24px;flex-wrap:wrap;padding-top:10px;padding-bottom:10px;border-bottom:1px solid var(--cream);color:var(--mute);}
+#tb-root .tb-header{display:flex;justify-content:space-between;align-items:center;gap:8px 24px;flex-wrap:wrap;padding-top:12px;padding-bottom:12px;border-bottom:1px solid var(--cream);}
+#tb-root .tb-header .tb-bungee{font-size:clamp(16px,2vw,22px);line-height:1;}
+#tb-root .tb-nav{display:flex;gap:clamp(14px,2vw,28px);font-size:12px;letter-spacing:.04em;text-transform:uppercase;flex-wrap:wrap;justify-content:flex-end;}
+#tb-root .tb-hero{background:var(--ink);padding-top:0;padding-bottom:0;border-bottom:1px solid var(--cream);}
+#tb-root .tb-hero .tb-wrap{display:grid;grid-template-columns:minmax(0,1fr);gap:clamp(32px,5vw,64px);}
+#tb-root .tb-hero .tb-eyebrow{color:var(--coral-lt);}
+#tb-root .tb-hero-text{display:flex;flex-direction:column;gap:32px;min-width:0;}
+#tb-root .tb-mark{position:relative;isolation:isolate;width:100vw;margin:0 calc(50% - 50vw);background-size:cover;background-position:center;background-repeat:no-repeat;padding:clamp(40px,6vw,96px) clamp(20px,5vw,72px);display:flex;justify-content:center;border-bottom:1px solid var(--cream);}
+#tb-root .tb-mark::before{content:"";position:absolute;inset:0;background:#ffffff;opacity:.1;pointer-events:none;z-index:0;}
+#tb-root .tb-mark .tb-wordmark{color:#FF005D;position:relative;z-index:1;}
+#tb-root .tb-wordmark{font-size:clamp(21px,5.2vw,90px);line-height:1;letter-spacing:.01em;white-space:nowrap;}
+#tb-root .tb-hero .tb-lede{font-size:clamp(15px,1.3vw,18px);max-width:52ch;}
+#tb-root .tb-portrait{width:clamp(180px,24vw,360px);aspect-ratio:1;border-radius:50%;overflow:hidden;justify-self:end;
+  box-shadow:0 0 0 1px var(--cream),0 0 0 14px var(--coral),0 0 0 15px var(--cream);}
+#tb-root .tb-portrait img,#tb-root .tb-about img{width:100%;height:100%;object-fit:cover;display:block;}
+#tb-root .tb-index{padding-top:clamp(40px,5vw,72px);padding-bottom:clamp(40px,5vw,72px);border-bottom:1px solid var(--cream);}
+#tb-root .tb-index-head{display:flex;justify-content:space-between;gap:16px;color:var(--mute);padding-bottom:12px;border-bottom:1px dashed var(--rule);}
+#tb-root .tb-row{display:grid;grid-template-columns:3ch minmax(0,1.2fr) minmax(0,1fr) 2ch;gap:clamp(12px,2vw,32px);align-items:baseline;padding:22px 0;border-bottom:1px dashed var(--rule);cursor:pointer;}
+#tb-root .tb-row .tb-num{font-size:13px;color:var(--coral-lt);}
+#tb-root .tb-row .tb-display{font-size:clamp(30px,3.6vw,52px);line-height:1;}
+#tb-root .tb-row .tb-meta{font-size:13px;letter-spacing:.04em;text-transform:uppercase;color:var(--mute);}
+#tb-root .tb-row .tb-arrow{font-size:18px;text-align:right;}
+#tb-root .tb-row:hover .tb-arrow{color:var(--coral-lt);}
+#tb-root .tb-section{padding-top:clamp(56px,7vw,104px);padding-bottom:clamp(56px,7vw,104px);border-bottom:1px solid var(--cream);}
+#tb-root .tb-bgimg{background-size:100% auto;background-position:top center;background-repeat:no-repeat;position:relative;isolation:isolate;}
+#tb-root .tb-bgimg{padding-top:clamp(45px,5.6vw,83px);padding-bottom:clamp(45px,5.6vw,83px);}
+#tb-root .tb-bgimg .tb-wrap{position:relative;z-index:1;background:rgba(21,17,16,.9);padding:clamp(16px,2.4vw,32px) !important;gap:clamp(19px,3.2vw,58px);}
+#tb-root .tb-bgimg .tb-side{gap:16px;}
+#tb-root .tb-bgimg .tb-body{gap:16px;}
+#tb-root .tb-bgimg h2{font-size:clamp(36px,4.9vw,72px);}
+#tb-root .tb-section .tb-wrap{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:clamp(24px,4vw,72px);align-items:start;}
+#tb-root .tb-side{display:flex;flex-direction:column;gap:20px;}
+#tb-root .tb-count{font-size:13px;letter-spacing:.08em;color:var(--coral-lt);}
+#tb-root .tb-section h2{font-size:clamp(36px,4.9vw,72px);line-height:.92;}
+#tb-root .tb-spec{display:grid;grid-template-columns:auto minmax(0,1fr);gap:6px 20px;font-size:13px;letter-spacing:.04em;text-transform:uppercase;border-top:1px dashed var(--rule);padding-top:14px;}
+#tb-root .tb-spec dt{color:var(--mute);}
+#tb-root .tb-body{display:flex;flex-direction:column;gap:20px;font-size:clamp(16px,1.3vw,19px);max-width:58ch;text-wrap:pretty;}
+#tb-root .tb-tight{padding-top:clamp(45px,5.6vw,83px);padding-bottom:clamp(45px,5.6vw,83px);}
+#tb-root .tb-tight .tb-wrap{gap:clamp(19px,3.2vw,58px);padding:clamp(16px,2.4vw,32px);}
+#tb-root .tb-tight .tb-side{gap:16px;}
+#tb-root .tb-tight .tb-body{gap:16px;}
+#tb-root .tb-light{background:var(--cream);color:var(--ink);padding-top:clamp(45px,5.6vw,83px);padding-bottom:clamp(45px,5.6vw,83px);}
+#tb-root .tb-light .tb-wrap{gap:clamp(19px,3.2vw,58px);padding:clamp(16px,2.4vw,32px);}
+#tb-root .tb-light .tb-side{gap:16px;}
+#tb-root .tb-light .tb-body{gap:16px;}
+#tb-root .tb-light .tb-count,#tb-root .tb-light strong{color:var(--coral);}
+#tb-root .tb-light .tb-spec{border-color:#999999;}
+#tb-root .tb-light .tb-spec dt{color:#666666;}
+#tb-root .tb-courses{list-style:none;padding:0;display:flex;flex-direction:column;border-top:1px dashed var(--rule);}
+#tb-root .tb-courses li{display:flex;gap:20px;padding:12px 0;border-bottom:1px dashed var(--rule);}
+#tb-root .tb-courses li span:first-child{font-size:13px;color:var(--coral-lt);flex-shrink:0;padding-top:4px;}
+#tb-root .tb-about .tb-wrap{gap:clamp(19px,3.2vw,58px);padding:clamp(16px,2.4vw,32px);grid-template-columns:auto minmax(0,1fr);}
+#tb-root .tb-about .tb-side{gap:16px;}
+#tb-root .tb-about .tb-body{gap:16px;}
+#tb-root .tb-about{padding-top:clamp(45px,5.6vw,83px);padding-bottom:clamp(45px,5.6vw,83px);}
+#tb-root .tb-light.tb-about img{border-color:var(--ink);}
+#tb-root .tb-about img{width:75%;max-width:330px;aspect-ratio:1;height:auto;border:1px solid var(--cream);}
+#tb-root .tb-footer{display:flex;justify-content:space-between;align-items:center;gap:16px;flex-wrap:wrap;padding-top:24px;padding-bottom:24px;font-size:13px;color:var(--mute);}
+#tb-root .tb-footer .tb-bungee{font-size:13px;color:var(--cream);}
+@media (max-width:720px){
+  #tb-root .tb-about .tb-wrap{grid-template-columns:1fr;}
+  #tb-root .tb-hero .tb-wrap{grid-template-columns:1fr;}
+  #tb-root .tb-portrait{justify-self:start;}
+  #tb-root .tb-row{grid-template-columns:3ch minmax(0,1fr) 2ch;}
+  #tb-root .tb-row .tb-meta{grid-column:2;}
+  #tb-root .tb-nav{gap:14px;font-size:12px;}
+}
+#tb-root .tb-band{display:block;width:100%;height:clamp(160px,26vw,340px);object-fit:cover;border-bottom:1px solid var(--cream);}
+#tb-root figure{margin:0;}
+#tb-root .tb-photo{display:block;width:100%;height:auto;border:1px solid var(--rule);}
+#tb-root .tb-photo-row{display:grid;grid-template-columns:2fr 1fr;gap:16px;align-items:stretch;}
+#tb-root .tb-photo-row img{width:100%;height:100%;object-fit:cover;display:block;border:1px solid #999999;}
+#tb-root figcaption{font-size:12px;letter-spacing:.06em;text-transform:uppercase;color:var(--mute);margin-top:8px;}
+#tb-root .tb-section,#tb-root .tb-tight,#tb-root .tb-light,#tb-root .tb-bgimg,#tb-root .tb-about{padding-top:36px !important;padding-bottom:36px !important;height:560px;display:flex;flex-direction:column;justify-content:center;overflow:hidden;}
+@media (max-width:720px){#tb-root .tb-section{height:auto;}}
+#tb-root .tb-section .tb-wrap{padding-top:0 !important;padding-bottom:0 !important;}
+#tb-root .tb-photo{width:auto;max-width:100%;max-height:300px;height:auto;object-fit:contain;}
+#tb-root .tb-photo-row{display:flex;gap:16px;align-items:stretch;height:min(240px,22vw);}
+#tb-root .tb-photo-row img{height:100%;width:auto;flex:0 1 auto;min-width:0;object-fit:cover;}
+#tb-root .tb-about img{width:auto;max-width:225px;max-height:225px;aspect-ratio:auto;object-fit:contain;}
+#tb-root .tb-about .tb-wrap{grid-template-columns:auto minmax(0,1fr);align-items:start;}
+#tb-root .tb-about .tb-side h2{line-height:1;margin:0;padding-top:0;}
+#tb-root .tb-about .tb-body{padding-top:0;}
+#tb-root .tb-about .tb-body p:first-child{line-height:1;padding-top:.12em;}
+#tb-root .tb-about .tb-body{max-width:62ch;}
+</style>
+
+<header class="tb-header tb-pad">
+  <a class="tb-eyebrow" href="#" data-tb="tb-top" style="color:var(--mute)">Assistive AI collaboration // Reconfigurable analog computing</a>
+  <nav class="tb-nav">
+    <a href="#" data-tb="tb-hydrology">01 Metastable Analog Synthesis</a>
+    <a href="#" data-tb="tb-fungarium">02 AI-Native Electronics Documentation</a>
+    <a href="#" data-tb="tb-coherence">03 Coherence: AI Mind-Map</a>
+    <a href="#" data-tb="tb-about">04 Paige Treebridge</a>
+  </nav>
+</header>
+
+<section id="tb-top" class="tb-hero tb-pad">
+  <div class="tb-wrap">
+    <div class="tb-mark" style="background-image:url('images/wordmark-diagram.jpg')"><h1 class="tb-bungee tb-wordmark"><span style="font-size:1.25em">TREEBRIDGE</span> RESEARCH</h1></div>
+  </div>
+</section>
+
+<section id="tb-hydrology" class="tb-section tb-tight tb-pad">
+  <div class="tb-wrap">
+    <div class="tb-side">
+      <h2 class="tb-display" style="font-size:clamp(22px,2.6vw,42px);white-space:nowrap;">Metastable Analog Synthesis</h2>
+      <dl class="tb-spec"><dt>Type</dt><dd><strong>Winnerless competition on field-programmable analog array</strong></dd><dt>Hardware</dt><dd>OTC2310K04-PIKA Pi HAT with 4 FPAAs</dd><dt>Deliverable</dt><dd>FPAA-driven audio environment</dd></dl>
+      <div class="tb-photo-row"><img src="images/four-chip-fpaa-board-stack.jpg" alt="Four-chip FPAA board stack"><img src="images/studio-monitor.jpg" alt="Studio monitor"></div>
+    </div>
+    <div class="tb-body">
+      <p><strong>Winnerless competition</strong> describes electronic systems in which no state remains stable. Metastable Analog Synthesis builds that <strong>behavior in analog hardware</strong> and uses it to produce <strong>generative music.</strong></p>
+      <p>What this project changes and why: <strong>Sustained metastable cycling</strong> has not been reported in hardware as a sound source, and no measurement protocol exists for a circuit that is meant never to settle. This project builds both, <strong>generative music via a cycling, artificial-life algorithm.</strong></p>
+    </div>
+  </div>
+</section>
+
+<section id="tb-fungarium" class="tb-section tb-pad tb-tight tb-light">
+  <div class="tb-wrap">
+    <div class="tb-side">
+      <h2 class="tb-display" style="font-size:clamp(22px,2.6vw,42px);">AI-Native Electronics Documentation</h2>
+      <dl class="tb-spec"><dt>Type</dt><dd><strong>AI-native circuit lifecycle format</strong></dd><dt>Deliverable</dt><dd>Open documentation standard</dd></dl>
+      <img class="tb-photo" src="images/breadboard-with-its-pixie-ring-list.png" alt="Breadboard with its Pixie Ring List">
+    </div>
+    <div class="tb-body">
+      <p>Pixie Ring Lists are a way of <strong>documenting breadboard electronics</strong> that helps you <strong>collaborate with AI</strong>.</p>
+      <p>Each circuit becomes a versioned sketchbook that keeps your wiring and the reasoning behind it. This project includes the development of careful, electronics-focused versions of <strong>Claude Code and Codex.</strong></p>
+    </div>
+  </div>
+</section>
+
+<section id="tb-coherence" class="tb-section tb-pad tb-tight">
+  <div class="tb-wrap">
+    <div class="tb-side">
+      <h2 class="tb-display" style="font-size:clamp(22px,2.6vw,42px);white-space:nowrap;">Coherence: AI Mind-Map</h2>
+      <dl class="tb-spec"><dt>Type</dt><dd><strong>AI-native assistive system</strong></dd><dt>Deliverable</dt><dd>Single-user software</dd></dl>
+    </div>
+    <div class="tb-body">
+      <p>Coherence is a personalized, <strong>AI-native notebook</strong>. AI collaborators turn notes into meetings, tasks, circuit diagrams, and calendars, and the person stays in charge of the pace.</p>
+      <p>Designed with particular attention to <strong>neurodivergent people</strong>, people with <strong>brain injury</strong>, and people experiencing <strong>age-related cognitive change</strong>.</p>
+    </div>
+  </div>
+</section>
+
+<section id="tb-about" class="tb-section tb-about tb-light tb-pad">
+  <div class="tb-wrap">
+    <div class="tb-side">
+      <h2 class="tb-display" style="font-size:clamp(22px,2.6vw,42px);white-space:nowrap;">Paige Treebridge</h2>
+      <img src="images/portrait-of-paige-treebridge.jpg" alt="Portrait of Paige Treebridge">
+    </div>
+    <div class="tb-body">
+      <p><strong>Tenured Associate Professor, School of Design, DePaul University</strong></p>
+      <p>My emerging technology practice is focused on generative music on cutting-edge analog electronic substrates and design language specifications for collaborative AI.</p>
+      <p>Yes, my middle name really is Yes. I was born in California. I grew up in the entertainment nexus of Orlando, Florida, where I learned the value of constructed experiences. I live in Chicago and I'm the proud mom of a theater director/social work grad student.</p>
+    </div>
+  </div>
+</section>
+
+<footer class="tb-footer tb-pad">
+  <span class="tb-bungee">TREEBRIDGE RESEARCH</span>
+  <span>Chicago · School of Design, DePaul University</span>
+</footer>
+
+<script>
+(function(){
+  var root=document.getElementById('tb-root');
+  root.addEventListener('click',function(e){
+    var a=e.target.closest('[data-tb]'); if(!a) return;
+    e.preventDefault();
+    var t=document.getElementById(a.getAttribute('data-tb')); if(!t) return;
+    window.scrollTo({top:t.getBoundingClientRect().top+window.pageYOffset,behavior:'smooth'});
+  });
+})();
+</script>
+</div>
+</body>
+</html>
